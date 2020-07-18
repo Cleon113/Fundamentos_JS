@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>clase36 - var, let y const: la diferencia entre ellos</title>
+  </head>
+  <body>
+    <script>
+
+      var camilo = {
+        nombre: "Camilo",
+        apellido: "León",
+        edad: 17
+      }
+
+      function esMayorDeEdad (persona) {
+      if (persona.edad > 18) {
+        var mensaje = "es mayor de edad"
+      } else {
+        var mensaje = "Es menor de edad"
+      }
+      console.log(mensaje)
+    }
+
+    // esMayorDeEdad(camilo)
+
+    for (var i = 0; i < 10; i++) {
+      console.log(i)
+    }
+
+    console.log(`terminó el for, el valor de i es ${i}`)
+
+
+
+    </script>
+  </body>
+</html>
